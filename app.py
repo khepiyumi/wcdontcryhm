@@ -52,6 +52,7 @@ st.markdown("조 3위 12개 팀 중 상위 8개 팀이 32강에 진출합니다.
 # 데이터 불러오기
 standings_data = get_worldcup_standings()
 third_place_teams = []
+st.write(standings_data)
 
 # 조 3위 데이터 파싱
 if standings_data and 'response' in standings_data and len(standings_data['response']) > 0:
